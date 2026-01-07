@@ -92,7 +92,7 @@ Role-based access control
 
 👩‍💻 Author
 Ayesha Ismail
-Informmation Technology Student
+Information Technology Student
 Bahria University
 
 🔗 GitHub: https://github.com/Ayeshaismail5
