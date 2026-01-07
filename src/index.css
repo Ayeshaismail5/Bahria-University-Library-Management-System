@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Bahria University Theme Colors */
+    --background: 0 0% 98%;
+    --foreground: 210 100% 13%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 210 100% 13%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 100% 13%;
+    
+    /* Primary - Navy Blue (#002147) */
+    --primary: 210 100% 13%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 100% 20%;
+    
+    /* Accent - Gold (#D4AF37) */
+    --accent: 45 70% 53%;
+    --accent-foreground: 210 100% 13%;
+    --accent-light: 45 70% 90%;
+    
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 100% 13%;
+    
+    --muted: 210 20% 95%;
+    --muted-foreground: 210 15% 45%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 13%;
+    
+    --radius: 0.5rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 13%) 0%, hsl(210 100% 20%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45 70% 53%) 0%, hsl(45 70% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 13%) 0%, hsl(210 100% 20%) 50%, hsl(210 100% 25%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(210 100% 13% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(210 100% 13% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(210 100% 13% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(210 100% 13% / 0.1);
+    
+    /* Sidebar */
+    --sidebar-background: 210 100% 13%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 70% 53%;
+    --sidebar-primary-foreground: 210 100% 13%;
+    --sidebar-accent: 210 100% 18%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 100% 18%;
+    --sidebar-ring: 45 70% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
